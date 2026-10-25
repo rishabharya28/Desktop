@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<syle>
+    ```html
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fdf2f2, #e8efff);
+        }
+
+        h1 {
+            text-align: center;
+            color: #252b42;
+            font-size: 34px;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        th {
+            background: linear-gradient(135deg, #e23744, #b91c32);
+            color: white;
+            padding: 18px;
+            text-align: left;
+            font-size: 16px;
+            border: 1px solid #c82333;
+        }
+
+        td {
+            padding: 16px 18px;
+            border: 1px solid #e5e7eb;
+            color: #374151;
+            font-size: 15px;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9fafb;
+        }
+
+        tbody tr {
+            transition: background-color 0.25s ease;
+        }
+
+        tbody tr:hover {
+            background-color: #ffe4e6;
+        }
+
+        /* Thank You row */
+        tbody tr:last-child td {
+            background-color: #fff1f2;
+            color: #be123c;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #fecdd3;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 25px 10px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            th,
+            td {
+                padding: 12px 8px;
+                font-size: 13px;
+            }
+        }
+    </style>
+    ```
+</syle>
+
+<body>
+    table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    }
+
+    th {
+    background-color: #e23744;
+    color: white;
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+    border: 2px solid black;
+    }
+
+    td {
+    padding: 12px 14px;
+    border-bottom: 1px solid #dddddd;
+    color: #333333;
+    border: 2px solid black;
+    }
+
+    tr:nth-child(even) {
+    background-color: #f8f8f8;
+    }
+
+    tr:hover {
+    background-color: #ffe8ea;
+    transition: 0.3s;
+    }
+
+    tr:last-child td {
+    border-bottom: none;
+    }
+    </style>
+
+    <body>
+        <h1>Tables in HTML</h1>
+        <table>
+            <!--head of the table-->
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <!--body of the table-->
+            <tbody>
+                <tr>
+                    <td>rishabh</td>
+                    <td>Software Engineer</td>
+                    <td>$80,000</td>
+                </tr>
+                <tr>
+                    <td>akhilesh</td>
+                    <td>software helper</td>
+                    <td>$9</td>
+                </tr>
+                <tr>
+                    <td>Faiz</td>
+                    <td>Ml Engineer</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>himanshi</td>
+                    <td>Ai engineer</td>
+                    <td>$10,000</td>
+                </tr>
+                <tr>
+                    <td colspan="1">Thanks</td>
+                    <td colspan="3">you</td>
+
+                </tr>
+            </tbody>
+
+            </tbody>
+        </table>
+    </body>
+
+</html>

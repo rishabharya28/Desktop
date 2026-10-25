@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html forms</title>
+</head>
+```html
+<style>
+    /* General page styling */
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        margin: 0;
+        padding: 40px 15px;
+        color: #333;
+    }
+
+    /* Form heading */
+    h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 25px;
+        font-size: 32px;
+    }
+
+    /* Form container */
+    form {
+        max-width: 550px;
+        margin: auto;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Spacing between fields */
+    form div {
+        margin-bottom: 20px;
+    }
+
+    /* Labels */
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #444;
+    }
+
+    /* Text inputs and dropdowns */
+    input:not([type="checkbox"]):not([type="color"]):not([type="range"]):not([type="file"]),
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 15px;
+        background-color: #fafafa;
+        transition: 0.3s;
+    }
+
+    /* Focus effect */
+    input:focus,
+    select:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+        background-color: white;
+    }
+
+    /* Textarea */
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    /* Checkbox */
+    input[type="checkbox"] {
+        width: 17px;
+        height: 17px;
+        accent-color: #667eea;
+        cursor: pointer;
+    }
+
+    /* Color picker */
+    input[type="color"] {
+        width: 55px;
+        height: 40px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Range slider */
+    input[type="range"] {
+        width: 100%;
+        accent-color: #667eea;
+        cursor: pointer;
+    }
+
+    /* File input */
+    input[type="file"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px dashed #aaa;
+        border-radius: 8px;
+        background: #fafafa;
+    }
+
+    /* Buttons */
+    button {
+        padding: 12px 22px;
+        border: none;
+        border-radius: 8px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 5px 5px 0 0;
+    }
+
+    button[type="submit"] {
+        background: #667eea;
+        color: white;
+    }
+
+    button[type="submit"]:hover {
+        background: #4c5ed0;
+        transform: translateY(-2px);
+    }
+
+    button[type="reset"] {
+        background: #e5e7eb;
+        color: #333;
+    }
+
+    button[type="reset"]:hover {
+        background: #d1d5db;
+    }
+
+    /* Mobile responsive design */
+    @media (max-width: 600px) {
+        body {
+            padding: 20px 12px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 26px;
+        }
+
+        button {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+</style>
+```
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="phone" placeholder="Enter phone">
+
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="Enter email">   
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input id="password" type="password" placeholder="Enter password">
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <select id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input id="dob" type="date">    
+        </div>
+        <div>
+            <label for="bio">Bio:</label>
+            <textarea id="bio" placeholder="Write something about yourself"></textarea>
+        </div>
+        <div>
+            <label for="subscribe">Subscribe to newsletter:</label>
+            <input id="subscribe" type="checkbox">
+        </div>
+        <div>
+            <label for="color">Favorite Color:</label>
+            <input id="color" type="color">
+        </div>
+        <div>
+            <label for="range">Select a range:</label>
+            <input id="range" type="range" min="0" max="100">   
+        </div>
+        <div>
+            <label for="file">Upload a file:</label>
+            <input id="file" type="file">
+        </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+        <div>
+            <button type="reset">Reset</button> 
+        </div>
+        <div>
+            <label for="search">Search:</label>
+            <input id="search" type="search" placeholder="Search...">   
+        </div>
+        <div>
+            <label for="url">Website URL:</label>
+            <input id="url" type="url" placeholder="Enter website URL">
+        </div>
+        <div>
+            <label for="tel">Telephone:</label>
+            <input id="tel" type="tel" placeholder="Enter telephone number">
+        </div>
+        <div>
+            <label for="month">Select a month:</label>
+            <input id="month" type="month">
+        </div>
+    </form>
+
+</body>
+</html>

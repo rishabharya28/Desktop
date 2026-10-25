@@ -1,0 +1,128 @@
+```css
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Background */
+body {
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #dff7f1, #c9d6ff);
+}
+
+/* Heading */
+h1 {
+    color: #124e4a;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+/* Form card - works with your current HTML */
+form {
+    width: 100%;
+    max-width: 440px;
+}
+
+/* Input field sections */
+body > div {
+    width: 100%;
+    max-width: 440px;
+    padding: 15px 28px;
+    background: #ffffff;
+}
+
+/* Top section */
+body > div:nth-of-type(1) {
+    padding-top: 28px;
+    border-radius: 14px 14px 0 0;
+}
+
+/* Bottom section */
+body > div:last-child {
+    padding-bottom: 28px;
+    border-radius: 0 0 14px 14px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #263238;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #d5dedf;
+    border-radius: 8px;
+    background: #f9fbfb;
+    color: #222;
+    font-size: 14px;
+    outline: none;
+    transition: 0.25s ease;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    background: #fff;
+    border-color: #0f9488;
+    box-shadow: 0 0 0 3px rgba(15, 148, 136, 0.12);
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #0f9488, #115e59);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+/* Button hover */
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #0b7c72, #0d4f4a);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(15, 94, 89, 0.2);
+}
+
+/* Button click */
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Responsive layout */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    body > div {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+```

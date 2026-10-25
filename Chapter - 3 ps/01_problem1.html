@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Food delevery at your doorstep</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        /* Header */
+        header {
+            background-color: #e23744;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header div:first-child {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+
+        /* Navigation Links */
+        header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 17px;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #ffdada;
+        }
+
+        /* Main Section */
+        main {
+            min-height: 70vh;
+            background-color: #fff5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        /* Main Heading */
+        main div {
+            font-size: 40px;
+            font-weight: bold;
+            color: #e23744;
+            margin-bottom: 25px;
+        }
+
+        /* Paragraph */
+        main p {
+            max-width: 650px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            font-size: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+            }
+
+            header a {
+                margin: 0 8px;
+                font-size: 15px;
+            }
+
+            main div {
+                font-size: 30px;
+            }
+
+            main p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>zomato</div>
+        <div>
+            <a href="/home">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">contact</a>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            Order food any time, anywhere.
+        </div>
+        <p>
+            Get your favorite meals delivered to your doorstep in no time.
+            and the bakeries was so good that I had to order more. The delivery was quick and the food was still hot
+            when it arrived. I will definitely be ordering from Zomato again!
+        </p>
+    </main>
+    <footer>
+        copyright Zomato All rights reserved.
+    </footer>
+</body>
+
+</html>
